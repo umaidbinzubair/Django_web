@@ -1,0 +1,6 @@
+<!-- we can still access base html from blog app -->
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>{{user.username}}</h1>
+{% endblock content %}

@@ -129,3 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# redirect after login to blog-home
+LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_URL='login' # so when we use login_required in views the default path is http://localhost:8000/accounts/login/?next=/profile/ so we need to change accounts/login to login/
+# /?next=/profile/ means the next page it will go to is profile/
